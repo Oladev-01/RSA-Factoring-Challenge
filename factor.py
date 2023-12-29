@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import sys
+
+
 def get_prime(files):
     if not isinstance(files, str):
         sys.exit(1)
@@ -16,6 +18,8 @@ def get_prime(files):
                 else:
                     div_sor += 1
             print("{:d}={}*{}".format(n, prime_no[0], prime_no[1]))
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage ./{} filename".format(sys.argv[0]))
